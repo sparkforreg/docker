@@ -106,11 +106,11 @@ Hands-on practice quest #00: prerequisites sound-check (15+5)
 ``` 
 
 - [ ] When участники *именуют сценарии*, выполняют команды и анализируют их вывод и поведение
-- Сценарий "Как ...?"
+- Сценарий "How to check system information?"
 ```shell
-docker version # TODO: собственные пометки участников для будущего использования в проектах
-docker system info
-docker system df
+docker version # How to check docker and api version?
+docker system info # docker info like dokker root folder, plugins
+docker system df #docker disk usage
 
 docker events
 ```
@@ -123,15 +123,15 @@ open https://hub.docker.com/settings/security # to make Access Token
 docker login -u {{ registry-account }} -p {{ access-token }} # login default hub.docker.com registry
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "How to pull image?"
 ```shell
 docker image pull alpine
 docker system df
 ````
 
-- Сценарий "Как ...?"
+- Сценарий "How to work with containers?"
 ```shell
-docker container ls [--all]
+docker container ls [--all] # SHow all containers default running and -a all
 docker container run --name demo -it alpine
 /# cat /etc/os-release
 /# exit 
