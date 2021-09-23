@@ -140,7 +140,7 @@ docker container run --name demo -it alpine
 - Сценарий "Как ...?"
 ```shell
 docker container ls [--all]
-docker container rm [--force] demo
+docker container rm [--force] demo # --force remove running container
 ```
 
 - [ ] Then участники делятся проблемами и отвечают на вопросы
